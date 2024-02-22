@@ -27,13 +27,15 @@ function starEvent(event){
     .then(value => {
         iziToast.show({
             title: 'Success',
-            message: `${value}`
+            message: `${value}`,
+            backgroundColor: "green"
         });
     })
     .catch(error => {
         iziToast.show({
             title: 'Error',
-            message: `${error}`
+            message: `${error}`,
+            backgroundColor: "red"
         });
     });
 }
